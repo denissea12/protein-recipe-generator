@@ -16,24 +16,26 @@
             <h1>Welcome to the AI High Protein Recipe Generator</h1>
         </header>
         <main>
-            <form id="recipe-generator-form">
-                <input type="text" placeholder="Enter the protein you'd like to start with" autofocus required
-                    autocomplete="off" class="instructions" id="protein-source">
-                <input type="submit" class="submit-button" />
-            </form>
-            <br />
-            <div class="recipe" id="recipe">
-
+            <div class="form-container">
+                <form id="recipe-generator-form">
+                    <input type="text" placeholder="Enter the protein source you'd like to start with..." autofocus
+                        required autocomplete="off" class="instructions" id="protein-source">
+                    <input type="submit" class="submit-button" />
+                </form>
+                <div class="hint">i.e.: eggs, ground turkey, greek yogurt</div>
             </div>
+            <br />
+            <div class="recipe hidden" id="recipe"></div>
+    </div>
 
-        </main>
-        <script src="src/index.js"></script>
-        <br />
-        <footer>This project was coded by <a href="https://github.com/denissea12" target="_blank">Denisse Ramirez</a>
-            and <a href="https://github.com/denissea12/protein-recipe-generator" target="_blank">is open-sourced on
-                Github</a>
-            and is <a href="https://high-protein-recipe-generator.netlify.app/" target="_blank">hosted
-                on Netlify</a> </footer>
+    </main>
+    <script src="src/index.js"></script>
+    <br />
+    <footer>This project was coded by <a href="https://github.com/denissea12" target="_blank">Denisse Ramirez</a>
+        and <a href="https://github.com/denissea12/protein-recipe-generator" target="_blank">is open-sourced on
+            Github</a>
+        and is <a href="https://high-protein-recipe-generator.netlify.app/" target="_blank">hosted
+            on Netlify</a> </footer>
     </div>
 </body>
 

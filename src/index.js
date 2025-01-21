@@ -20,6 +20,10 @@ function AIRecipeGenerator(event) {
     "You are a fitness coach who loves to indulge in good food that is nutritious and high in protein. Your mission is to generate a recipe using the protein source provided by the user. Make sure you return the recipe in basic html format. Do not include html in response.";
   apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let RecipeElementBox = document.querySelector("#recipe");
+  RecipeElementBox.classList.remove("hidden");
+  RecipeElementBox.innerHTML = `<div class="blink">Generating a recipe using ${userInputElement.value} as an ingredient...</div>`;
+
   console.log("generating recipe");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);

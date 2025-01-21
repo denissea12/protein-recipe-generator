@@ -24,9 +24,6 @@ function AIRecipeGenerator(event) {
   RecipeElementBox.classList.remove("hidden");
   RecipeElementBox.innerHTML = `<div class="blink">Generating a recipe using ${userInputElement.value} as an ingredient...</div>`;
 
-  console.log("generating recipe");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
   axios.get(apiUrl).then(displayRecipe);
 }
 let recipeFormElement = document.querySelector("#recipe-generator-form");
